@@ -1,11 +1,24 @@
 {
 	"dependencies": {
 		"@types/aws-lambda": "^8.10.33",
+		"@types/dotenv": "^6.1.1",
+		"@types/koa": "^2.0.50",
+		"@types/koa-bodyparser": "^4.3.0",
+		"@types/koa-router": "^7.0.42",
 		"@types/node": "^12.7.8",
+		"apollo-server-koa": "^2.9.4",
+		"dotenv": "^8.1.0",
+		"graphql": "^14.5.8",
+		"koa": "^2.8.2",
+		"koa-bodyparser": "^4.2.1",
+		"koa-router": "^7.4.0",
+		"serverless-http": "^2.3.0",
 		"serverless-offline": "^5.11.0",
 		"serverless-webpack": "^5.3.1",
 		"source-map-support": "^0.5.13",
 		"ts-loader": "^6.2.0",
+		"ts-node": "^8.4.1",
+		"ts-node-dev": "^1.0.0-pre.43",
 		"tslint": "^5.20.0",
 		"tslint-config-airbnb": "^5.11.2",
 		"tslint-config-prettier": "^1.18.0",
@@ -19,6 +32,7 @@
 	"author": "parkchanjong <7000cj@gmail.com>",
 	"license": "MIT",
 	"scripts": {
-		"offline": "sls offline --port 5001"
+		"offline": "sls offline --port 5001",
+		"dev": "npx ts-node-dev --respawn ./src/server.ts"
 	}
 }
