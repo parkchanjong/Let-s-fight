@@ -7,6 +7,7 @@
 		"@types/koa-router": "^7.0.42",
 		"@types/node": "^12.7.8",
 		"apollo-server-koa": "^2.9.4",
+		"cross-env": "^6.0.3",
 		"dotenv": "^8.1.0",
 		"graphql": "^14.5.8",
 		"koa": "^2.8.2",
@@ -22,6 +23,7 @@
 		"tslint": "^5.20.0",
 		"tslint-config-airbnb": "^5.11.2",
 		"tslint-config-prettier": "^1.18.0",
+		"typeorm": "^0.2.19",
 		"typescript": "^3.6.3",
 		"webpack": "^4.41.0"
 	},
@@ -33,6 +35,6 @@
 	"license": "MIT",
 	"scripts": {
 		"offline": "sls offline --port 5001",
-		"dev": "npx ts-node-dev --respawn ./src/server.ts"
+		"dev": "cross-env NODE_ENV=development ts-node-dev --respawn ./src/server.ts"
 	}
 }
